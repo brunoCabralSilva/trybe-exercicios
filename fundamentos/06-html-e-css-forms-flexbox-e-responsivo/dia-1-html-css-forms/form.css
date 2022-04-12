@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
+header{
+    font-size: 30px;
+    font-weight: bolder;;
+    margin: 30px;
+}
+
+#formulario{
+    border: 1px solid black;
+    margin: 20px;
+    background-color: rgb(225, 237, 243);
+}
+
+.default-settings{
+    margin-left: 30px;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#nome-usuario, #email-usuario{
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+#destino-viagem{
+
+}
+
+input[type=radio]{
+    margin-right: 10px;
+}
+
+input[type=text], input[type=email]{
+    width: 90%;
+}
+
+#texto-pq{
+    
+}
+
+#date {
+
+}
+
+button {
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(225, 237, 243);
+    font-size: 18px;
+}

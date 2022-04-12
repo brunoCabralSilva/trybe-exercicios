@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' type='text/css' href='form.css'>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>Viaje com a Trybe!</header>
+    <main>
+        <form method='get'>
+            <section id='formulario'>
+                <div id='dados-usuario' class='default-settings'>
+                    <label for='nome-usuario'>Nome:</label>
+                    <input type='text' name='nome-usuario' id='nome-usuario' minlength="10" maxlength="40">
+                    <br>
+                    <label for='email-usuario'>E-mail:</label>
+                    <input type='email' name='email-usuario' id='email-usuario' minlength="10" maxlength="40">
+                </div>
+                <div id='destino-viagem' class='default-settings'>
+                    <input type='radio' id='option-1' name=option>
+                    <label for='option-1' value='cidade'>Cidade</label>
+                    <input type='radio' id='option-2' name=option>
+                    <label for='option-2' value='campo'>Campo</label>
+                    <input type='radio' id='option-3' name=option>
+                    <label for='option-3' value='praia'>Praia</label>
+                    <input type='radio' id='option-4' name=option>
+                    <label for='option-4' value='montanha'>Montanhas</label>
+                </div>
+                <div id='texto-pq' class='default-settings'>
+                    <label for='texto-resposta' maxlength='500'>Por que você deveria ser a pessoa desenvolvedora a
+                        ganhar o
+                        concurso TrybeTrip?</label>
+                    <textarea id='texto-resposta' name='texto-resposta' rows="8" cols="140"></textarea>
+                </div>
+                <div id='date' class='default-settings'>
+                    <label for='date-usuario'>Qual a melhor data para realizar sua viagem?</label>
+                    <input type='date' id='date-usuario' name='date-usuario'>
+                </div>
+                <div class='default-settings'>
+                    <input type='checkbox' id='primeiro-termo' name='primeiro-termo'></input>
+                    <label for='primeiro-termo'>Gostaria de receber outras incríveis oportunidades oferecidas pela
+                        Trybe</label>
+                        <br>
+                    <input type='checkbox' id='primeiro-termo' name='primeiro-termo'></input>
+                    <label for='primeiro-termo'>Concordo que imagens das minhas férias poderão ser usadas na divulgação
+                        de concursos futuros.</label>
+                </div>
+            </section>
+            <div id = 'botoes'>
+            <button type='submit' id='submit-data'>Enviar</button>
+                <button type='submit' id='submit-data'>Apagar</button>
+            </div>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

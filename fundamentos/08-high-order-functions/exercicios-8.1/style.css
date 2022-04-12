@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#combate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align:center;
+    line-height: 1.5;
+    min-height: 250px;
+}
+
+.char {
+    padding: 20px;
+    max-width: 25%;    
+    min-width: 25%;
+}
+
+#novoTurno {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+}

@@ -1,3 +1,5 @@
+
+// // Requisito 1: Transformar tudo em um array
 // const arrays = [
 //     ['1', '2', '3'],
 //     [true],
@@ -75,8 +77,19 @@ const books = [
     },
   ];
   
-  function reduceNames(array) {
-    array.reduce((listaAutores, author) => listaAutores += `${author.name}, `);
-}
+// //Requisito 2
+//  function unificaNome (acc, nome) {
+//    acc.name += nome.name;
+//   }
 
-  console.log(reduceNames(books));
+//   const expectedResult = books.author.reduce(unificaNome, 0).name;
+
+
+//   console.log(expectedResult);
+
+// // Requisito 3
+
+const mediaIdade = books.reduce((acc, idade) => ({
+  acc.numeroAutores: acc += 1,
+  acc.somaDeValores: acc += idade
+}));

@@ -1,5 +1,5 @@
 
-// // Requisito 1: Transformar tudo em um array
+// Requisito 1: Dada uma matriz, transforme em um array.
 // const arrays = [
 //     ['1', '2', '3'],
 //     [true],
@@ -7,12 +7,12 @@
 // ];
 
 // function flatten(array) {
-//     array.reduce((acc, nome) => {
-//      acc.push(nome);
-//     }),[];
+//   return arrays.reduce((acumulaArray, posicao) => {
+    
+//   });
 // }
 
-// console.log(flatten(arrays));
+console.log(flatten());
 
 const books = [
   {
@@ -77,22 +77,30 @@ const books = [
   },
 ];
 
-//Requisito 2
-//  function unificaNome (acc, nome) {
-//    acc.name += nome.name;
-//   }
+// // Requisito 2 - Crie uma string com os nomes de todas as pessoas autoras.
 
-//   const expectedResult = books.author.reduce(unificaNome).name;
+// function reduceNames() {
+//   return lista = books.reduce((nomes, nomeAtual, index) => {
+//     let frase = `${nomes += nomeAtual.author.name}, ` ;
+//     return frase;
+//   }, '');
+// }
 
+// console.log(reduceNames());
 
-//   console.log(expectedResult);
+// // Requisito 3 Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 
-// // Requisito 3
+// function averageAge() {
+//   let somatorio = 0;
+//   return books.reduce((acumuladorMedia, idade) => {
+//     let age = idade.releaseYear - idade.author.birthYear;
+//     let qtd = books.length;
+//     somatorio += age;
+//     return acumuladorMedia = somatorio / qtd;
+//   },0);
+// }
 
-// const mediaIdade = books.reduce((acc, idade) => ({
-//   acc.numeroAutores: acc += 1,
-//   acc.somaDeValores: acc += idade
-// }));
+// console.log(averageAge());
 
 // //Requisito 4
 
@@ -102,21 +110,33 @@ const books = [
 //  } return nome;
 // });
 
-// console.log (maiorNome);
+// console.log (maiorNome.name);
 
-//Requisito 5
+//Requisito 5 - Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
 // const names = [
 //   'Aanemarie', 'Adervandes', 'Akifusa',
 //   'Abegildo', 'Adicellia', 'Aladonata',
 //   'Abeladerco', 'Adieidy', 'Alarucha',
 // ];
 
-// const vezesAa = names.reduce ((acc, nome) => {
-//   if (nome.includes('a')) {
-//     return {acc.maiusculo += 1, acc.minusculo = acc.minusculo};
-//   } else if (nome.includes('A')) {
-//     return {acc.minusculo = acc.minusculo, acc.minusculo += 1};
-//   }
-// });
+// function containsA() {
+ 
+// }
 
-// vezesAa();
+//Requisito 6 - Agora vamos criar um novo array de objetos a partir das informações abaixo, onde cada objeto terá o formato { name: nome do aluno, average: media das notas } . Para isso vamos assumir que a posição 0 de notas refere-se ao aluno na posição 0 de alunos , aqui além de reduce será necessário utilizar também a função map . Dica: Você pode acessar o index do array dentro de map , e você pode ver o objeto esperado na constante expected .
+
+// const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+// const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+// function studentAverage() {
+  
+//   return students.map((aluno, index) => ({ 
+//     nome: aluno,
+//     average: ((grades[index].reduce((acumulador, nota) => {
+//       return (acumulador += nota);
+//     },0))/ grades[index].length).toFixed(1),
+//   }
+//   ));
+// }
+
+// console.log(studentAverage());
